@@ -3,8 +3,8 @@ const router = express.Router();
 const { getAllCars, addCar, updateCarAvailability } = require('../controllers/carController');
 
 // Routes
-router.get('/', getAllCars); // GET /api/cars
-router.post('/', addCar); // POST /api/cars
-router.put('/:id', updateCarAvailability); // PUT /api/cars/:id
+router.get('/', getAllCars);
+router.post('/', addCar); 
+router.put('/:id', updateCarAvailability); 
 
 module.exports = router;
