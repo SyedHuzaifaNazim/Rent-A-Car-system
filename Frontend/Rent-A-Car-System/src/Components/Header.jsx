@@ -45,12 +45,12 @@ const Header = () => {
           <nav className="hidden md:flex md:flex-grow justify-center">
             <ul className="flex justify-center space-x-4 text-white">
               <li>
-                <a href="#Home" className="hover:text-secondary font-bold">
+                <a href="/Home" className="hover:text-secondary font-bold">
                   Home
                 </a>
               </li>
               <li>
-                <a href="About" className="hover:text-secondary font-bold">
+                <a href="/About" className="hover:text-secondary font-bold">
                   About us
                 </a>
               </li>
@@ -70,7 +70,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="#team" className="hover:text-secondary font-bold">
+                <a href="/team" className="hover:text-secondary font-bold">
                   Team
                 </a>
               </li>
@@ -91,7 +91,7 @@ const Header = () => {
               Github
             </a>
             <a
-              href="https://github.com/SyedHuzaifaNazim/Rent-A-Car-system"
+              href="https://github.com/SyedHuzaifaNazim/Rent-A-Car-system/archive/refs/heads/main.zip"
               className="bg-blue-500 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded inline-block"
             >
               Download
