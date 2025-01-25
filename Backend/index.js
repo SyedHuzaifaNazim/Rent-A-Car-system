@@ -27,17 +27,22 @@
 // });
 
 
+const express = require('express');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
+const helmet = require('helmet');
+const routes = require('./src/routes/index');
 
+// import express from "express";
+// import "dotenv/config";
+// import mongoose from "mongoose";
+// import cors from "cors";
+// import cookieParser from "cookie-parser";
+// import helmet from "helmet";
 
-
-import express from "express";
-import "dotenv/config";
-import mongoose from "mongoose";
-import cors from "cors";
-import cookieParser from "cookie-parser";
-import helmet from "helmet";
-
-import routes from "./src/routes/index.js";
+// import routes from "./src/routes/index.js";
 
 const PORT = process.env.PORT || 9999;
 const app = express();

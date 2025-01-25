@@ -1,4 +1,5 @@
-import getCarService from "../services/getCar.js";
+// import getCarService from "../services/getCar.js";
+const getCarService = require("../services/getCar.js");
 
 const getCarController = async (req, res) => {
   try {
@@ -9,4 +10,5 @@ const getCarController = async (req, res) => {
   }
 };
 
-export default getCarController;
+// export default getCarController;
+module.exports = getCarController;

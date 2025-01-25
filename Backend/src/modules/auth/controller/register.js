@@ -1,4 +1,5 @@
-import registerUser from "../services/register.js";
+// import registerUser from "../services/register.js";
+const registerUser = require("../services/register");
 
 const registerController = async (req, res) => {
   try {
@@ -27,4 +28,5 @@ const registerController = async (req, res) => {
   }
 };
 
-export default registerController;
+// export default registerController;
+module.exports = registerController;

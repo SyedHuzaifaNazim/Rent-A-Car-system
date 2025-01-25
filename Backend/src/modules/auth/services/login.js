@@ -1,7 +1,12 @@
-import matchUserData from "../db/login.js";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import "dotenv/config";
+// import matchUserData from "../db/login.js";
+// import bcrypt from "bcrypt";
+// import jwt from "jsonwebtoken";
+// import "dotenv/config";
+
+const matchUserData = require("../db/login");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+require("dotenv/config");
 
 const loginUser = async (data, res) => {
   try {
@@ -27,4 +32,5 @@ const loginUser = async (data, res) => {
   }
 };
 
-export default loginUser;
+// export default loginUser;
+module.exports = loginUser;

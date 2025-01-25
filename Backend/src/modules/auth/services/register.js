@@ -1,7 +1,12 @@
-import addUserData from "../db/register.js";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import "dotenv/config";
+// import addUserData from "../db/register.js";
+// import bcrypt from "bcrypt";
+// import jwt from "jsonwebtoken";
+// import "dotenv/config";
+
+const addUserData = require("../db/register");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+require("dotenv/config");
 
 const registerUser = async (data, res) => {
   const password = bcrypt.hashSync(data.password, 10);
@@ -17,4 +22,5 @@ const registerUser = async (data, res) => {
   return await addUserData(data);
 };
 
-export default registerUser;
+// export default registerUser;
+module.exports = registerUser;

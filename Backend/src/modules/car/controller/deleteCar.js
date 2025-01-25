@@ -1,4 +1,5 @@
-import deleteCarService from "../services/deleteCar.js";
+// import deleteCarService from "../services/deleteCar.js";
+const deleteCarService = require("../services/deleteCar.js");
 
 const deleteCarController = async (req, res) => {
   try {
@@ -8,4 +9,5 @@ const deleteCarController = async (req, res) => {
     console.log(err);
   }
 };
-export default deleteCarController;
+// export default deleteCarController;
+module.exports = deleteCarController;

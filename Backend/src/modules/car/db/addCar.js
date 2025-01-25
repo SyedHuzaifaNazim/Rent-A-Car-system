@@ -1,6 +1,6 @@
-import Model from "../models/index.js";
-// import UserModel from "../../auth/models/index.js";
-
+// import Model from "../models/index.js";
+// // import UserModel from "../../auth/models/index.js";
+const Model = require("../models/index.js");
 const addCarData = async (data) => {
   try {
     // const user = await UserModel.findOne({ email: data.email });
@@ -14,4 +14,5 @@ const addCarData = async (data) => {
   }
 };
 
-export default addCarData;
+// export default addCarData;
+module.exports = addCarData;

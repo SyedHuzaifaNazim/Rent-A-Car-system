@@ -1,4 +1,5 @@
-import approveReqService from "../services/approveReq.js";
+// import approveReqService from "../services/approveReq.js";
+const approveReqService = require("../services/approveReq.js");
 
 const approveReqController = async (req, res) => {
   try {
@@ -8,4 +9,5 @@ const approveReqController = async (req, res) => {
     console.log(err);
   }
 };
-export default approveReqController;
+// export default approveReqController;
+module.exports = approveReqController;

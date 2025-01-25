@@ -1,4 +1,5 @@
-import getUser from "../services/getUser.js";
+// import getUser from "../services/getUser.js";
+const getUser = require("../services/getUser");
 
 const getUserController = async (req, res) => {
   try {
@@ -12,4 +13,5 @@ const getUserController = async (req, res) => {
   }
 };
 
-export default getUserController;
+// export default getUserController;
+module.exports = getUserController;

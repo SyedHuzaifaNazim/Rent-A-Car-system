@@ -1,4 +1,5 @@
-import Model from "../models/index.js";
+// import Model from "../models/index.js";
+const Model = require("../models/index");
 
 const getUserInfo = async (data) => {
   try {
@@ -9,4 +10,5 @@ const getUserInfo = async (data) => {
   }
 };
 
-export default getUserInfo;
+// export default getUserInfo;
+module.exports = getUserInfo;

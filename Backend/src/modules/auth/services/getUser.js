@@ -1,7 +1,9 @@
-import getUserInfo from "../db/getUser.js";
+// import getUserInfo from "../db/getUser.js";
+const getUserInfo = require("../db/getUser");
 
 const getUser = async (data) => {
   return await getUserInfo(data);
 };
 
-export default getUser;
+// export default getUser;
+module.exports = getUser;

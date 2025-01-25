@@ -6,4 +6,5 @@ const logoutController = async (req, res) => {
     res.status(200).json({ message: "Logged out successfully" });
   };
   
-  export default logoutController;
+  // export default logoutController;
+  module.exports = logoutController;

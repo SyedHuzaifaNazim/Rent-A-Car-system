@@ -1,4 +1,5 @@
-import Model from "../models/index.js";
+// import Model from "../models/index.js";
+const Model = require("../models/index");
 
 const matchUserData = async (data) => {
   try {
@@ -13,4 +14,5 @@ const matchUserData = async (data) => {
   }
 };
 
-export default matchUserData;
+// export default matchUserData;
+module.exports = matchUserData;

@@ -1,4 +1,5 @@
-import requestCarService from "../services/requestCar.js";
+// import requestCarService from "../services/requestCar.js";
+const requestCarService = require("../services/requestCar.js");
 
 const requestCarController = async (req, res) => {
   const updatedCar = await requestCarService(
@@ -8,4 +9,5 @@ const requestCarController = async (req, res) => {
   );
   res.send(updatedCar);
 };
-export default requestCarController;
+// export default requestCarController;
+module.exports = requestCarController;

@@ -1,4 +1,5 @@
-import carAddService from "../services/addCar.js";
+// import carAddService from "../services/addCar.js";
+const carAddService = require("../services/addCar.js");
 
 const carAddController = async (req, res) => {
   try {
@@ -18,4 +19,5 @@ const carAddController = async (req, res) => {
   }
 };
 
-export default carAddController;
+// export default carAddController;
+module.exports = carAddController;

@@ -1,4 +1,5 @@
-import loginUser from "../services/login.js";
+// import loginUser from "../services/login.js";
+const loginUser = require("../services/login");
 
 const loginController = async (req, res) => {
   try {
@@ -20,4 +21,5 @@ const loginController = async (req, res) => {
   }
 };
 
-export default loginController;
+// export default loginController;
+module.exports = loginController;

@@ -1,4 +1,5 @@
-import Model from "../models/index.js";
+// import Model from "../models/index.js";
+const Model = require("../models/index.js");
 
 const approveReqData = async (data) => {
   try {
@@ -9,4 +10,5 @@ const approveReqData = async (data) => {
   } catch (err) {}
 };
 
-export default approveReqData;
+// export default approveReqData;
+exports.approveReqData = approveReqData;
